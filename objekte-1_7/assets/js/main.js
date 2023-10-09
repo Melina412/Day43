@@ -51,3 +51,11 @@ myMusic.forEach((track) => {
     </div>`;
   document.body.innerHTML += output;
 });
+
+// Bonus:
+let filter_year = myMusic.filter((track) => track.release_year < 1975);
+console.log(filter_year);
+
+filter_year.forEach((track) => {
+  console.log(track.release_year);
+});
